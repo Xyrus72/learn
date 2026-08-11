@@ -181,3 +181,43 @@ module.exports = function initSocket(io) {
 
   })
 }
+
+
+Conversation → Access conversation data
+Message      → Access message data
+User         → Access user data
+
+initSocket(io) → Set up all Socket.IO logic
+io.use()       → Check if user is authenticated
+session        → Get logged-in user's session
+userId         → Identify the user
+User.findById  → Find user in database
+socket.user    → Attach user to socket
+
+connection     → User connected
+socket         → Current user's connection
+
+socket.join() → Join a conversation room
+socket.leave() → Leave a conversation room
+
+join_room     → User wants to join a chat
+leave_room    → User wants to leave a chat
+
+send_message  → User sends a message
+Message.create → Save message to MongoDB
+conv.save()    → Update conversation info
+
+io.to(room)   → Target a specific room
+emit()        → Send an event
+new_message   → Tell room about new message
+
+user_123      → Personal room for user 123
+conversation_updated → Update sidebar
+
+typing        → User is typing
+stop_typing   → User stopped typing
+
+socket.to(room) → Send to everyone else in room
+io.to(room)     → Send to everyone in room
+
+disconnect    → User disconnected
