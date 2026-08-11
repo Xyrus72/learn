@@ -37,3 +37,16 @@ initSocket(io)
 
 // 5. Listen on PORT using server (not app.listen!)
 server.listen(5000, () => console.log('Server running with WebSockets!'))
+
+
+
+
+new Server → Create Socket.IO
+
+cors → Who can connect?
+
+origin → Where did they come from?
+
+callback → Allow or block
+
+credentials → Allow cookies/session
